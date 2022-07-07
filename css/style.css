@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.b{
+    border: 3px solid rgb(255, 0, 0);
+}
+
+/* =============================HEADER============================= */
+
+header{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: flex-end;
+}
+.sub-header{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 280px;
+}
+.header-txt{
+    font-weight: 500;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+
+/* =============================MAIN CONTENT============================= */
+
+.main-content{
+    width: 100%;
+    height: 400px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.main-content-left{
+    width: 700px;
+    height: 400px;
+}
+.main-content-title{
+    font-weight: 700;
+    font-size: 44px;
+}
+.main-content-txt{
+    font-weight: 400;
+    font-size: 19px;
+}
+.main-content-avatar{
+    width: 270px;
+    height: 300px;
+    border-radius: 500px;
+}
+.main-content-right{
+    width: 300px;
+    height: 400px;
+}
+.download-menu{
+    width: 208px;
+    height: 47px;
+    background: #FF6464;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.button{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* =============================BLUE BOX MENU============================= */
+
+.blue-box-menu{
+    height: 396px;
+    background-color: #EDF7FA;
+    margin-top: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+    box-sizing: border-box;
+}
+.blue-box-header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blue-box-span{
+    font-weight: 400;
+    font-size: 30px;
+    color: #21243D;
+}
+.blue-box-link{
+    font-weight: 400;
+    font-size: 20px;
+    color: #00A8CC;
+    text-decoration: none;
+}
+.blog{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.post{
+    width: 418px;
+    height: 295px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+    border-radius: 4px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.post-title{
+    font-weight: 700;
+    font-size: 24px;
+    color: #21243D;
+}
+.post-date{
+    font-weight: 500;
+    font-size: 18px;
+}
+.post-txt{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* =============================WORKS MENU============================= */
+
+.works-menu{
+    width: 1350px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.work-portfolio{
+    width: 1250px;
+    height: 300px;
+    border-bottom: 1px solid #E0E0E0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.portfolio-icon{
+    width: 480px;
+    height: 240px;
+    border-radius: 6px;
+}
+.portfolio-span{
+    margin-left: 30px;
+}
+footer{
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 300px;
+    height: 200px;
+}
+.contacts{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
