@@ -1,40 +1,95 @@
-body{
-    margin: 0;
+body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.b{
-    border: 3px solid rgb(255, 0, 0);
+p {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.6;
+}
+h1 {
+    font-size: 40px;
+    color: #fff;
+}
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 26px;
+}
+h2, h3 {
+    color: #282828;
+}
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+.brand {
+    font-size: 30px;
+}
+.menu {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.menu li {
+    float: right;
+    font-size: 16px;
+    list-style: none;
+    color: #000000;
+}
+.menu li a {
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* =============================HEADER============================= */
-
-header{
-    width: 100%;
-    height: 65px;
-    display: flex;
-    justify-content: flex-end;
-}
-.sub-header{
-    width: 400px;
-    height: 50px;
+.menu{
+    width: 20%;
+    float: right;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    margin-right: 280px;
+    color: #000000;
 }
-.header-txt{
-    font-weight: 500;
+.menu-type{
+    color: black;
     font-size: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
-    color: #000;
+    font-weight: 500;
+}
+header {
+    background-color: #fff;
+    padding-top: 30px;
+}
+header .brand {
+    float: right;
+    color: #000000;
+    margin-bottom: 30px;
+}
+header .menu {
+    float: right;
+    margin-bottom: 30px;
+}
+header .menu li {
+    padding-left: 20px;
+}
+header .menu li a {
+    color: #000000;
 }
 
-/* =============================MAIN CONTENT============================= */
+/* =============================MAIN TOP============================= */
 
+.mt{
+    margin-top: 20%;
+}
 .main-content{
-    width: 100%;
-    height: 400px;
     margin-top: 150px;
     display: flex;
     flex-direction: row;
@@ -46,15 +101,15 @@ header{
 }
 .main-content-title{
     font-weight: 700;
-    font-size: 44px;
+    font-size: 30px;
 }
 .main-content-txt{
     font-weight: 400;
-    font-size: 19px;
+    font-size: 16px;
 }
 .main-content-avatar{
-    width: 270px;
-    height: 300px;
+    width: 235px;
+    height: 250px;
     border-radius: 500px;
 }
 .main-content-right{
@@ -83,7 +138,6 @@ header{
 .blue-box-menu{
     height: 396px;
     background-color: #EDF7FA;
-    margin-top: 100px;
     padding-left: 300px;
     padding-right: 300px;
     box-sizing: border-box;
@@ -122,52 +176,168 @@ header{
 }
 .post-title{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 17px;
     color: #21243D;
 }
 .post-date{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
 }
 .post-txt{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 /* =============================WORKS MENU============================= */
 
+.mt{
+    margin-top: 40px;
+}
 .works-menu{
-    width: 1350px;
-    height: 700px;
-    margin: 0 auto;
-    padding: 30px;
+    width: auto;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 .work-portfolio{
-    width: 1250px;
-    height: 300px;
     border-bottom: 1px solid #E0E0E0;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 .portfolio-icon{
-    width: 480px;
-    height: 240px;
+    width: 23%;
+    height: 60%;
     border-radius: 6px;
 }
 .portfolio-span{
     margin-left: 30px;
+    margin-bottom: 25px;
 }
-footer{
-    margin: 0 auto;
-    margin-top: 150px;
-    width: 300px;
-    height: 200px;
+.work-title{
+    font-weight: 700;
+    font-size: 17px;
+    color: #21243D;
 }
-.contacts{
-    width: 200px;
+
+/* =============================FOOTER============================= */
+
+footer {
+    clear: both;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+footer .footer-nav li {
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style: none;
+}
+footer .footer-nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+footer .copyright {
+    font-size: 20px;
+    color: #21243D;
+}
+
+.b{
+    border: 1px solid red;
+}
+
+@media (max-width: 575px) {
+
+    .mt{
+        margin-top: 50px;
+    }
+
+    .menu{
+        width: 100%;
+        float: none;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-content .mt{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .main-content-left{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main-content-right{
+        width: 100%;
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+    .download-menu{
+        display: flex;
+        justify-content: center;
+    }
+    .blue-box-menu{
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: initial;
+        justify-content: center;
+    }
+    .blue-box-header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        float: none;
+    }
+    .container{
+        width: 100%;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .blog{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .post{
+        width: 90%;
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: auto;
+        margin: 0;
+    }
+    .post-title{
+        font-size: 14px;
+    }
+    .post-date{
+        font-size: 12px;
+    }
+    .post-txt{
+        font-size: 12px;
+    }
+    .works-menu{
+        margin-top: 60px;
+        width: 90%;
+    }
+    .blue-box-span{
+        text-align: center;
+        width: 100%;
+    }
 }
