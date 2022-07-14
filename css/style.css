@@ -253,7 +253,7 @@ footer .copyright {
 @media (max-width: 575px) {
 
     .mt{
-        margin-top: 50px;
+        margin-top: 30%;
     }
 
     .menu{
@@ -263,12 +263,9 @@ footer .copyright {
         display: flex;
         justify-content: space-around;
     }
-    .main-content .mt{
+    .main-content{
         display: flex;
         flex-direction: column-reverse;
-        width: 90%;
-        display: flex;
-        justify-content: center;
     }
     .main-content-left{
         width: 100%;
@@ -276,6 +273,7 @@ footer .copyright {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin-bottom: 50%;
     }
     .main-content-right{
         width: 100%;
@@ -284,8 +282,8 @@ footer .copyright {
         justify-content: center;
     }
     .download-menu{
-        display: flex;
-        justify-content: center;
+        position: relative;
+        left: 21%;
     }
     .blue-box-menu{
         padding: 0;
@@ -294,6 +292,7 @@ footer .copyright {
         flex-direction: column;
         background-color: initial;
         justify-content: center;
+        box-sizing: border-box;
     }
     .blue-box-header{
         display: flex;
